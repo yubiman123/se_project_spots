@@ -1,4 +1,6 @@
 .footer__name {
+  margin: 0;
+  color: #212121;
   display: flex;
   justify-content: center;
   height: 16px;

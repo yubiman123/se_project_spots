@@ -1,18 +1,20 @@
 .cards {
   padding-top: 20px;
-  border-bottom: 1px solid #000000;
+  border-bottom: 1px solid #212121;
 }
 .cards__list {
   list-style-type: none;
-  padding: 0;
+  padding: 0 0 40px;
   margin: 0;
   display: grid;
   grid-template-columns: repeat(auto-fit, 413px);
   justify-content: center;
-  gap: 40px 20px;
+  gap: 20px;
 }
 @media screen and (max-width: 627px) {
   .cards__list {
+    row-gap: 20px;
+    padding-bottom: 20px;
     grid-template-columns: repeat(auto-fit, 288px);
   }
 }
