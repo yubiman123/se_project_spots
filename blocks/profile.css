@@ -1,9 +1,3 @@
-/*
-  Note to reviewer:
-  Apologies for the late submission! I’ve worked hard to meet the project requirements and appreciate your time reviewing my code :) .
-  I’ll remove this comment before posting to GitHub.
-*/
-
 .profile {
   display: flex;
   padding: 34px 0 20px;
@@ -35,6 +29,7 @@
   text-overflow: ellipsis;
   -webkit-line-clamp: 3;
   -webkit-box-orient: vertical;
+  color: #212121;
 }
 
 .profile__description {
@@ -50,30 +45,36 @@
 }
 
 .profile__edit-btn {
+  font-size: 16px;
+  line-height: 100%;
   margin-top: auto;
   border: none;
   width: fit-content;
   height: 16px;
+  display: flex;
   gap: 8px;
+  color: #212121;
+  font-family: Poppins, Arial, Helvetica, sans-serif;
   background-color: #fcf5e5;
-  opacity: 0.7;
   padding: 0;
+  opacity: 0.7;
 }
 
 .profile__edit-btn:hover {
   cursor: pointer;
-  opacity: 0.7;
+  opacity: 100%;
 }
 
 .profile__add-btn {
+  border: none;
   margin-left: auto;
   margin-top: auto;
   display: flex;
   align-items: center;
   justify-content: center;
-  width: fit-content;
+  width: 149px;
   height: 52px;
-  padding: 18px 32px;
+  padding: 18px 16px;
   border-radius: 8px;
   gap: 8px;
   font-family: Poppins, Arial, Helvetica, sans-serif;
@@ -93,7 +94,6 @@
   opacity: 0.8;
 }
 
-/* Responsive design */
 @media screen and (max-width: 627px) {
   .profile {
     flex-direction: column;
