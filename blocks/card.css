@@ -51,17 +51,13 @@
 
 @media screen and (max-width: 627px) {
   .card__title {
-    font-family: Poppins;
-    font-weight: 500;
     font-size: 16px;
     line-height: 100%;
-    letter-spacing: 0%;
   }
 
   .card__like-btn {
     width: 20px;
     height: 18px;
-    opacity: 0.4;
   }
   .card__image {
     height: 288px;
