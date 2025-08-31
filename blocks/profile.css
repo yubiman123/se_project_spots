@@ -70,7 +70,7 @@
   opacity: 100%;
 }
 
-.profile__new-post-btn {
+.profile__add-btn {
   border: none;
   margin-left: auto;
   margin-top: auto;
@@ -94,7 +94,7 @@
   transition: opacity 0.3s ease-in-out;
 }
 
-.profile__new-post-btn:hover {
+.profile__add-btn:hover {
   cursor: pointer;
   opacity: 0.8;
 }
