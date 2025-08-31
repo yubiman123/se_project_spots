@@ -1,19 +1,18 @@
 .modal {
-  visibility: hidden;
+  display: none;
   background-color: #00000080;
   position: fixed;
   top: 0;
   right: 0;
   bottom: 0;
   left: 0;
-  display: flex;
   justify-content: center;
   align-items: center;
   padding: 10px;
 }
 
-.modal_is-opened {
-visibility: visible;
+.modal.modal_is-opened {
+  display: flex;
 }
 
 .modal__container {
