@@ -9,10 +9,12 @@
   justify-content: center;
   align-items: center;
   padding: 10px;
+  visibility: hidden;
 }
 
 .modal.modal_is-opened {
   display: flex;
+  visibility: visible;
 }
 
 .modal__container {
