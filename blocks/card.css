@@ -3,7 +3,7 @@
   width: 100%;
   object-fit: cover;
   display: block;
-  border-radius: 10px;
+  border-radius: 8px;
   margin-bottom: 10px;
 }
 .card__content {
@@ -16,7 +16,7 @@
 .card__title {
   margin: 0;
   font-family: Poppins, Arial, Helvetica, sans-serif;
-  max-width: 190px;
+  max-width: 353px;
   height: 24px;
   top: 425px;
   font-weight: 500;
