@@ -11,6 +11,9 @@ const editProfileNameInput = editProfileModal.querySelector("#profile-name-input
 const editProfileDescriptionInput = editProfileModal.querySelector("#profile-description-input");
 const editProfileForm = editProfileModal.querySelector(".modal__form");
 
+const addCardFormElement = newPostModal.querySelector(".modal__form");
+const linkInput = newPostModal.querySelector("#card-image-input");
+const captionInput = newPostModal.querySelector("#image-caption-input");
 
 function openModal(modal) {
   modal.classList.add("modal_is-opened");
@@ -38,6 +41,22 @@ setModalCloseHandler(editProfileModal);
 newPostBtn.addEventListener("click", () => openModal(newPostModal));
 setModalCloseHandler(newPostModal);
 
+
+// Create the form submission handler
+function handleAddCardSubmit(evt) {
+  // Prevent default browser behavior
+  evt.preventDefault();
+
+  // Log both input values to the console
+  console.log("Image link:", linkInput.value);
+  console.log("Caption:", captionInput.value);
+
+  // Close the modal
+  closeModal(newPostModal);
+}
+
+// Create the submit listener
+addCardFormElement.addEventListener('submit', handleAddCardSubmit);
 
 
 function handleEditProfileSubmit(evt) {
