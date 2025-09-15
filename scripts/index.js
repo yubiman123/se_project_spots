@@ -42,20 +42,20 @@ newPostBtn.addEventListener("click", () => openModal(newPostModal));
 setModalCloseHandler(newPostModal);
 
 
-// Create the form submission handler
+
 function handleAddCardSubmit(evt) {
-  // Prevent default browser behavior
+
   evt.preventDefault();
 
-  // Log both input values to the console
+
   console.log("Image link:", linkInput.value);
   console.log("Caption:", captionInput.value);
 
-  // Close the modal
+
   closeModal(newPostModal);
 }
 
-// Create the submit listener
+
 addCardFormElement.addEventListener('submit', handleAddCardSubmit);
 
 

@@ -41,7 +41,7 @@
   font-size: 16px;
   line-height: 100%;
   letter-spacing: 0;
-   display: -webkit-box;
+  display: -webkit-box;
   overflow: hidden;
   text-overflow: ellipsis;
   -webkit-line-clamp: 3;
@@ -63,7 +63,7 @@
   background-color: #fcf5e5;
   padding: 0;
   opacity: 0.7;
-   cursor: pointer;
+  cursor: pointer;
 }
 
 .profile__add-btn {
