@@ -1,3 +1,5 @@
+/* thank you for your reviewing my code and helping me out, i really appreciate it! */
+
 .modal {
   display: flex;
   background-color: #00000080;
@@ -41,7 +43,7 @@
   color: #212121;
   border-radius: 2px;
   border: none;
-  background-image: url("../images/Close-btn-icon.png");
+  background-image: url("../images/close-btn-opaque.png");
   opacity: 0.4;
 }
 
@@ -79,7 +81,7 @@
   width: 100%;
   color: #212121;
   border-radius: 8px;
-  border-color: rgba(33, 33, 33, 1);
+  opacity: 40%;
   border-width: 1px;
   border-style: solid;
   font-size: 20px;

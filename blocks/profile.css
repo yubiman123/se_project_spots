@@ -60,9 +60,14 @@
   gap: 8px;
   color: #212121;
   font-family: Poppins, Arial, Helvetica, sans-serif;
+  font-weight: 500;
   background-color: #fcf5e5;
   padding: 0;
   opacity: 0.7;
+  cursor: pointer;
+}
+
+.profile__edit-btn:hover {
   cursor: pointer;
 }
 
