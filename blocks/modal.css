@@ -1,5 +1,3 @@
-/* thank you for your reviewing my code and helping me out, i really appreciate it! */
-
 .modal {
   display: flex;
   background-color: #00000080;
@@ -81,7 +79,7 @@
   width: 100%;
   color: #212121;
   border-radius: 8px;
-  opacity: 40%;
+  border-color: rgba(33, 33, 33, 0.4);
   border-width: 1px;
   border-style: solid;
   font-size: 20px;
@@ -93,6 +91,7 @@
 }
 
 .modal__input:hover {
+  opacity: 100%;
   cursor: pointer;
   border-color: #212121;
 }
