@@ -13,7 +13,7 @@
   <body>
     <div class="page">
       <header class="header">
-        <img src="./images/Logo.svg" alt="Spot logo" class="header__logo" />
+        <img src="./images/Logo.svg" alt="Spots logo" class="header__logo" />
       </header>
       <main class="content">
         <section class="profile page__section">
@@ -26,76 +26,25 @@
             <h1 class="profile__name">Bessie Coleman</h1>
             <p class="profile__description">Civil Aviator</p>
             <button type="button" class="profile__edit-btn">
-              <img src="./images/pencil.svg.svg" alt="Pencil icon" />Edit
-              Profile
+              <img src="./images/pencil.svg.svg" alt="Pencil icon" /> Edit Profile
             </button>
           </div>
           <button type="button" class="profile__add-btn">
-            <img src="./images/plus.svg" alt="Plus icon" />New Post
+            <img src="./images/plus.svg" alt="Plus icon" /> New Post
           </button>
         </section>
         <section class="cards page__section">
           <ul class="cards__list">
-            <li class="card">
-              <img
-                src="./images/1-photo-by-moritz-feldmann-from-pexels.jpg"
-                alt="cabin"
-                class="card__image"
-              />
-              <div class="card__content">
-                <h2 class="card__title">Val Thorens</h2>
-                <button type="button" class="card__like-btn"></button>
-              </div>
-            </li>
-            <li class="card">
-              <img
-                src="./images/Restaraunt.png.png"
-                alt="restaraunt"
-                class="card__image"
-              />
-              <div class="card__content">
-                <h2 class="card__title">Restaurant terrace</h2>
-                <button type="button" class="card__like-btn"></button>
-              </div>
-            </li>
-            <li class="card">
-              <img src="./images/Cafe.jpg" alt="cafe" class="card__image" />
-              <div class="card__content">
-                <h2 class="card__title">An outdoor cafe</h2>
-                <button type="button" class="card__like-btn"></button>
-              </div>
-            </li>
-            <li class="card">
-              <img src="./images/Bridge.jpg" alt="bridge" class="card__image" />
-              <div class="card__content">
-                <h2 class="card__title">
-                  A very long bridge, over the forest...
-                </h2>
-                <button type="button" class="card__like-btn"></button>
-              </div>
-            </li>
-            <li class="card">
-              <img
-                src="./images/Tunnel.png.png"
-                alt="tunnel"
-                class="card__image"
-              />
-              <div class="card__content">
-                <h2 class="card__title">Tunnel with morning light</h2>
-                <button type="button" class="card__like-btn"></button>
-              </div>
-            </li>
-            <li class="card">
-              <img
-                src="./images/Mountain.png.png"
-                alt="house"
-                class="card__image"
-              />
-              <div class="card__content">
-                <h2 class="card__title">Mountain house</h2>
-                <button type="button" class="card__like-btn"></button>
-              </div>
-            </li>
+            <template id="card-template">
+              <li class="card">
+                <button class="card__delete-button" type="button"></button>
+                <img class="card__image" src="#" alt="" />
+                <div class="card__content">
+                  <h2 class="card__title"></h2>
+                  <button type="button" class="card__like-btn"></button>
+                </div>
+              </li>
+            </template>
           </ul>
         </section>
       </main>
@@ -114,6 +63,7 @@
                 type="text"
                 class="modal__input"
                 placeholder="Type your name"
+                required
               />
             </label>
             <label for="profile-description-input" class="modal__label">
@@ -123,6 +73,7 @@
                 type="text"
                 class="modal__input"
                 placeholder="Describe yourself"
+                required
               />
             </label>
             <button type="submit" class="modal__submit-btn">Save</button>
@@ -154,6 +105,13 @@
             </label>
             <button type="submit" class="modal__submit-btn">Save</button>
           </form>
+        </div>
+      </div>
+      <div class="modal" id="preview-modal">
+        <div class="modal__image-container">
+          <button type="button" class="modal__close-btn"></button>
+          <img src="#" alt="" class="modal__image" />
+          <p class="modal__caption"></p>
         </div>
       </div>
     </div>
