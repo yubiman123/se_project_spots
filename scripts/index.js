@@ -1,7 +1,7 @@
 const initialCards = [
   {
     name: "Golden Gate Bridge",
-    link: "https://practicum-content.s3.us-west-1.amazonaws.com/software-engineer/spots/4-photo-by-maurice-laschet-from-pexels.jpg",
+    link: "https://image2url.com/images/1762072669619-00deadbb-9fa3-45b0-81e7-5e59d7e075dd.jpg",
   },
   {
     name: "Restaurant terrace",

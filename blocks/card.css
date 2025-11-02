@@ -12,6 +12,12 @@
   border-radius: 8px;
   margin-bottom: 10px;
 }
+
+.card__image:hover {
+  filter: brightness(0.8);
+  transition: filter 0.3s ease;
+}
+
 .card__content {
   display: flex;
   align-items: center;
@@ -65,13 +71,13 @@
   padding: 0;
   border: none;
   background-color: transparent;
-  opacity: 40%;
+  opacity: 0.4;
   cursor: pointer;
   transition: background-color 0.3s ease;
 }
 
 .card__like-btn:hover {
-  opacity: 100%;
+  opacity: 1;
 }
 
 .card__like-btn_active {
