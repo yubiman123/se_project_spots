@@ -1,0 +1,49 @@
+@import url(../vendor/normalize.css);
+@import url(../vendor/fonts.css);
+@import url(../blocks/page.css);
+@import url(../blocks/header.css);
+@import url(../blocks/content.css);
+@import url(../blocks/profile.css);
+@import url(../blocks/cards.css);
+@import url(../blocks/card.css);
+@import url(../blocks/footer.css);
+@import url(../blocks/modal.css);
+
+.modal__image-container {
+  position: relative;
+  padding: 0;
+  background: transparent;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal__image {
+  max-width: 80vw;
+  max-height: 80vh;
+  object-fit: contain;
+  border-radius: 8px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.5);
+}
+
+.modal__caption {
+  margin-top: 10px;
+  color: #fff;
+  font-family: Poppins, Arial, sans-serif;
+  font-size: 16px;
+  text-align: center;
+  max-width: 80vw;
+}
+
+@media screen and (max-width: 480px) {
+  .modal__image {
+    max-width: 90vw;
+    max-height: 60vh;
+  }
+
+  .modal__caption {
+    font-size: 14px;
+    max-width: 90vw;
+  }
+}
