@@ -41,6 +41,9 @@
   border-radius: 2px;
   border: none;
   background-image: url("../images/close-btn-opaque.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
   opacity: 0.4;
 }
 
@@ -51,7 +54,7 @@
 
 .modal__title {
   margin: 0 0 32px;
-  font-family: Poppins, Arial, Sans-serif;
+  font-family: Poppins, Arial, sans-serif;
   line-height: 100%;
   font-weight: 500;
   font-size: 32px;
@@ -65,11 +68,10 @@
 .modal__label {
   margin: 0 0 32px;
   color: #212121b2;
-  font-family: Poppins, Arial, Sans-serif;
+  font-family: Poppins, Arial, sans-serif;
   font-weight: 500;
   font-size: 16px;
   line-height: 110%;
-  margin-bottom: 32px;
 }
 
 .modal__input {
@@ -79,52 +81,55 @@
   width: 100%;
   color: #212121;
   border-radius: 8px;
-  border-color: rgba(33, 33, 33, 0.4);
-  border-width: 1px;
-  border-style: solid;
+  border: 1px solid rgba(33, 33, 33, 0.4);
   font-size: 20px;
-  font-family: Poppins, Arial, Sans-serif;
+  font-family: Poppins, Arial, sans-serif;
   font-weight: 500;
-  font-style: normal;
   box-sizing: border-box;
   line-height: 100%;
 }
 
 .modal__input:hover {
-  opacity: 1;
   cursor: pointer;
   border-color: #212121;
-}
-
-.modal__input_type_error {
-  border: 1px solid rgba(255, 0, 0, 0.6);
 }
 
 .modal__input::placeholder {
   color: #2121214d;
 }
 
+.modal__input_type_error {
+  border-color: #ff0000;
+}
+
 .modal__error {
   display: block;
-  margin-top: 8px;
-  /*TODO: USE CORRECT COLOR AND FONT SIZES */
-  color: rgba(255, 0, 0, 0.6);
+  margin-top: 4px;
+  color: #ff0000;
+  font-family: Poppins, Arial, sans-serif;
+  font-size: 12px;
 }
 
 .modal__submit-btn {
   max-width: 156px;
   height: 52px;
   border-radius: 8px;
-  padding: 18px 32px 18px 32px;
+  padding: 18px 32px;
   color: #fcf5e5;
   background-color: #212121;
-  font-family: Poppins, Arial, Sans-serif;
+  font-family: Poppins, Arial, sans-serif;
   border: none;
 }
 
 .modal__submit-btn:hover {
   cursor: pointer;
   opacity: 0.8;
+}
+
+.modal__submit-btn:disabled {
+  background-color: #bdbdbd;
+  cursor: default;
+  opacity: 0.6;
 }
 
 .modal__image-container {
@@ -154,6 +159,30 @@
   max-width: 80vw;
 }
 
+@media screen and (max-width: 600px) {
+  .modal__container {
+    padding: 12px;
+  }
+
+  .modal__close-btn {
+    right: 12px;
+    top: 12px;
+  }
+
+  .modal__input {
+    font-size: 16px;
+  }
+
+  .modal__title {
+    font-size: 20px;
+    margin: 12px 0 24px;
+  }
+
+  .modal__submit-btn {
+    max-width: 100%;
+  }
+}
+
 @media screen and (max-width: 480px) {
   .modal__image {
     max-width: 90vw;
@@ -163,32 +192,5 @@
   .modal__caption {
     font-size: 14px;
     max-width: 90vw;
-  }
-}
-
-@media screen and (max-width: 600px) {
-  .modal__container {
-    padding: 12px 12px;
-  }
-
-  .modal__close-btn {
-    right: 12px;
-    top: 12px;
-    width: 40px;
-    height: 40px;
-  }
-
-  .modal__input {
-    font-size: 16px;
-  }
-
-  .modal__title {
-    width: 106px;
-    font-size: 20px;
-    margin: 12px 0 24px;
-  }
-
-  .modal__submit-btn {
-    max-width: 100%;
   }
 }
