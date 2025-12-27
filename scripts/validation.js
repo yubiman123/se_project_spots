@@ -39,6 +39,17 @@ const setEventListeners = (formEl) => {
   });
 };
 
+function resetValidation(formEl) {
+  const inputList = Array.from(formEl.querySelectorAll(".modal__input"));
+  const buttonEl = formEl.querySelector(".modal__submit-btn");
+
+  inputList.forEach((inputEl) => {
+    hideInputError(formEl, inputEl);
+  });
+
+  buttonEl.disabled = true;
+}
+
 const enableValidation = () => {
   const formList = document.querySelectorAll(".modal__form");
   formList.forEach(setEventListeners);
