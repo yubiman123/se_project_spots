@@ -159,4 +159,4 @@ initialCards.forEach((item) => {
   cardsList.append(cardElement);
 });
 
-// thank you for reviewing my code
+// thank you for reviewing my code :)
